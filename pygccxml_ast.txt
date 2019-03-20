@@ -1,0 +1,89 @@
+namespace_t: 'sample_namespace'
+
+    artificial: 'False' 
+    class_t: 'sample_class'
+
+        location: [sample.h]:3
+        artificial: 'False' 
+        class type: 'class' 
+        size: 1             
+        align: 1            
+        public:             
+
+        constructor_t: 'sample_class'
+
+            location: [sample.h]:3
+            artificial: 'True'  
+            is extern: False
+            return type: None
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+            explicit: False
+
+            copy constructor: False
+
+        constructor_t: 'sample_class'
+
+            location: [sample.h]:3
+            artificial: 'True'  
+            is extern: False
+            return type: None
+            arguments type: ::sample_namespace::sample_class const & arg0
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+            explicit: False
+
+            copy constructor: True
+
+        destructor_t: '~sample_class'
+
+            location: [sample.h]:3
+            artificial: 'True'  
+        member_function_t: 'sample_method'
+
+            location: [sample.h]:6
+            artificial: 'False' 
+            mangled: _ZN16sample_namespace12sample_class13sample_methodEv
+            is extern: False
+            return type: void
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        member_operator_t: 'operator='
+
+            location: [sample.h]:3
+            artificial: 'True'  
+            mangled: _ZN16sample_namespace12sample_classaSERKS0_
+            is extern: False
+            return type: ::sample_namespace::sample_class &
+            arguments type: ::sample_namespace::sample_class const & arg0
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        protected:          
+
+        private:            
