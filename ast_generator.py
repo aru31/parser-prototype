@@ -1,3 +1,5 @@
+import sys
+
 from pygccxml import utils
 from pygccxml import declarations
 from pygccxml import parser
@@ -19,3 +21,14 @@ def pygccxml_parser(filename):
     global_namespace = declarations.get_global_namespace(decls)
     ns = global_namespace.namespace("sample_namespace")
     return declarations.print_declarations(ns)
+
+def main():
+    pygccxml_parser(sys.argv[1])
+
+
+if __name__ == '__main__':
+    if len(sys.argv) == 2:
+        main()
+    else:
+        raise Exception('Please input only one header file!')
+

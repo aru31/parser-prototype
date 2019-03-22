@@ -52,11 +52,27 @@ namespace_t: 'sample_namespace'
 
             location: [sample.h]:3
             artificial: 'True'  
-        member_function_t: 'sample_method'
+        member_function_t: 'sample_method1'
 
             location: [sample.h]:6
             artificial: 'False' 
-            mangled: _ZN16sample_namespace12sample_class13sample_methodEv
+            mangled: _ZN16sample_namespace12sample_class14sample_method1Ev
+            is extern: False
+            return type: void
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        member_function_t: 'sample_method2'
+
+            location: [sample.h]:7
+            artificial: 'False' 
+            mangled: _ZN16sample_namespace12sample_class14sample_method2Ev
             is extern: False
             return type: void
             arguments type: 
@@ -87,3 +103,4 @@ namespace_t: 'sample_namespace'
         protected:          
 
         private:            
+

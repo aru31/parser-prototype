@@ -7,9 +7,7 @@ def AbstractASTGenerator(parser, filename):
     Abstract parser implementation
     """
     try:
-        if parser.lower() == 'clang':
-            print('This is demo for pygccxml parser, :)')
-        elif parser.lower() == 'pygccxml':
+        if parser.lower() == 'pygccxml':
             yaml_generator.convert_yaml(filename)
     except Exception:
         pass
@@ -20,7 +18,6 @@ def InitailParserInput():
     Parser Type Input
     """
     parser_list = [
-        'clang',
         'pygccxml',
     ]
     parser = input('Parser type(' + '/'.join(parser_list) + '): ')

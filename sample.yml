@@ -3,5 +3,10 @@ parameters:
 - arguments: ''
   is_static: 'False'
   is_virtual: not virtual
-  name: sample_method
+  name: sample_method1
+  retrun_type: void
+- arguments: ''
+  is_static: 'False'
+  is_virtual: not virtual
+  name: sample_method2
   retrun_type: void
