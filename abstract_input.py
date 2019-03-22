@@ -14,6 +14,7 @@ def AbstractASTGenerator(parser, filename):
     except Exception:
         pass
 
+
 def InitailParserInput():
     """
     Parser Type Input
@@ -28,8 +29,10 @@ def InitailParserInput():
     else:
         raise Exception('Please specify a valid parser name!')
 
+
 def main():
     InitailParserInput()
+
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
