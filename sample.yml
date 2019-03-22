@@ -1,0 +1,7 @@
+filename: sample.h
+parameters:
+- arguments: ''
+  is_static: 'False'
+  is_virtual: not virtual
+  name: sample_method
+  retrun_type: void
