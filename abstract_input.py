@@ -1,5 +1,5 @@
 import sys
-import text_parser
+import yaml_generator
 
 
 def AbstractASTGenerator(parser, filename):
@@ -10,7 +10,7 @@ def AbstractASTGenerator(parser, filename):
         if parser.lower() == 'clang':
             print('This is demo for pygccxml parser, :)')
         elif parser.lower() == 'pygccxml':
-            text_parser.pygccxml_text_parser(filename)
+            yaml_generator.convert_yaml(filename)
     except Exception:
         pass
 
