@@ -2,6 +2,10 @@
 To use this tool, follow the given instructions after installing pygccxml:
 
 ```
+python3 ast_generator.py sample.h > pygccxml_ast.txt
+```
+then
+```
 python3 abstract_input.py sample.h
 ```
 
